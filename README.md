@@ -1,2 +1,2 @@
 # CapitalistTranslator
-Translate to capitalist
+Translate from your language to Capitalist
