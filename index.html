@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capitalist Translator</title>
+    <!--Icon (link)-->
+    <link rel="shortcut icon" href="https://www.iconninja.com/ico/128/cash-dollar-currency-money-5951.ico">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!--FA-->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!--Cookie Consent-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 id="text1" class="title">
+        Capitalist Translator
+      </h1>
+      <p id="text2" class="subtitle">
+        Translate from your language to <strong>Capitalist</strong>
+      </p>
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span id="language-selected">English</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a id="English" class="dropdown-item is-active">English</a>
+            <a id="Español" class="dropdown-item">Español</a>
+            <a id="Français" class="dropdown-item">Français</a>
+            <a id="Português" class="dropdown-item">Português</a>
+          </div>
+        </div>
+      </div>
+        <br><br>
+        <div class="control has-icons-left">
+          <input id="input" class="input" type="text" placeholder="Type something...">
+          <span onclick="listen2()" class="icon is-left" style="cursor: pointer;pointer-events: initial !important;">
+              <i class="fas fa-volume-up"></i>
+          </span>
+        </div>
+        <br>
+        <button id="translate" class="button is-info">Translate</button>
+        <br><br>
+        <div class="control has-icons-left">
+          <input id="translation-field" class="input" type="text" value="" readonly>
+          <span onclick="listen()" class="icon is-left" style="cursor: pointer;pointer-events: initial !important;">
+              <i class="fas fa-volume-up"></i>
+          </span>
+        </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Copyright &copy; 2020 <a href="http://giorgioproductions.github.io/">Giorgio Productions</a> | <span id="footer">The source code of this web app is licensed <a href="LICENSE">GPL 3.0</a> and can be found <a target="_blank" href="https://github.com/GiorgioProductions/CapitalistTranslator">here</a>.</span>
+      </p>
+    </div>
+  </footer>
+  <script src="js/translate.js"></script>
+  </body>
+</html>
