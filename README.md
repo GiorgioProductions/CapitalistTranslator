@@ -1,0 +1,2 @@
+# CapitalistTranslator
+Translate to capitalist
