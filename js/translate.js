@@ -59,9 +59,10 @@ translate.addEventListener('click', function(event) {
 
 //Listen
 function listen() {
-  if (!(document.getElementById("translation-field").value == "") && !(document.getElementById("translation-field").value == ""))
-  var audio = new Audio('tts/tts.wav');
-  audio.play();
+  if (!(document.getElementById("translation-field").value == "") && !(document.getElementById("translation-field").value == "")) {
+    var audio = new Audio('tts/tts.wav');
+    audio.play();
+  }
 }
 function listen2() {
   var input = document.getElementById("input").value;
