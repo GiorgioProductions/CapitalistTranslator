@@ -59,12 +59,14 @@ translate.addEventListener('click', function(event) {
 
 //Listen
 function listen() {
+  window.speechSynthesis.cancel();
   if (!(document.getElementById("translation-field").value == "") && !(document.getElementById("translation-field").value == "")) {
     var audio = new Audio('tts/tts.wav');
     audio.play();
   }
 }
 function listen2() {
+  window.speechSynthesis.cancel();
   var input = document.getElementById("input").value;
   var msg = new SpeechSynthesisUtterance(input);
   switch (language.innerHTML) {
