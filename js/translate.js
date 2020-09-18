@@ -18,6 +18,9 @@ switch (browserLang.substring(0,2)) {
   case "pt":
   var lang = "Português";
   break;
+
+  //Add your language code here
+
 }
 language.innerHTML=lang;
 document.querySelectorAll('.dropdown-item').forEach(el => el.classList.remove('is-active'));
@@ -85,6 +88,9 @@ function listen2() {
     case "Português":
     var msglang = "pt-BR"
     break;
+
+    //Add your language code here
+
   }
   msg.lang = msglang;
   window.speechSynthesis.speak(msg);
@@ -155,7 +161,12 @@ function switchLanguage(cookies) {
     var cookiesdismiss = "De acordo";
     var cookieslink = "Aprender mais <i class='fas fa-external-link-alt fa-xs'></i>";
     break;
+
+    //Add your language strings here
+
   }
+
+
   //This will only be executed when you open the app
   if (cookies) {
     window.cookieconsent.initialise({
