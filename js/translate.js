@@ -139,7 +139,7 @@ function switchLanguage(cookies) {
     case "Français":
     document.title="Traducteur Capitaliste"
     text1.innerHTML = document.title;
-    text2.innerHTML = "Traduire de votre langue vers <strong>Capitaliste</strong>";
+    text2.innerHTML = "Traduire de votre langue au <strong>Capitaliste</strong>";
     text3.placeholder = "Écris quelque chose...";
     text4.placeholder = "Traduction";
     translate.innerHTML = "Traduire";
