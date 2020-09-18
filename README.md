@@ -1,5 +1,5 @@
 # CapitalistTranslator
 Translate from your language to Capitalist
 
-# You can help adding more languages if you want
-Go to js/translate.js to contribute
+# How to contribute
+You can help adding your language if you want. Go to **js/translate.js**.
