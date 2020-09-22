@@ -117,7 +117,7 @@ function switchLanguage(cookies) {
     text3.placeholder = "Type something...";
     text4.placeholder = "Translation";
     translate.innerHTML = "Translate";
-    footer.innerHTML = "The source code of this web app is licensed <a href=\"LICENSE\">GPL 3.0</a> and can be found <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">here</a>."
+    footer.innerHTML = "The source code of this web app is licensed <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> and can be found <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">here</a>."
     var cookiesmessage = "This website uses cookies to improve your experience.";
     var cookiesdismiss = "OK";
     var cookieslink = "Learn more <i class='fas fa-external-link-alt fa-xs'></i>";
@@ -130,7 +130,7 @@ function switchLanguage(cookies) {
     text3.placeholder = "Escribe algo...";
     text4.placeholder = "Traducción";
     translate.innerHTML = "Traducir";
-    footer.innerHTML = "El código fuente de esta página tiene licencia <a href=\"LICENSE\">GPL 3.0</a> y puede ser encontrado <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">aquí</a>."
+    footer.innerHTML = "El código fuente de esta página tiene licencia <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> y puede ser encontrado <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">aquí</a>."
     var cookiesmessage = "Este sitio utiliza cookies para mejorar tu experiencia.";
     var cookiesdismiss = "De acuerdo";
     var cookieslink = "Aprender más <i class='fas fa-external-link-alt fa-xs'></i>";
@@ -143,7 +143,7 @@ function switchLanguage(cookies) {
     text3.placeholder = "Écris quelque chose...";
     text4.placeholder = "Traduction";
     translate.innerHTML = "Traduire";
-    footer.innerHTML = "Le code source de cette page est sous licence <a href=\"LICENSE\">GPL 3.0</a> et peut être trouvé <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">ici</a>."
+    footer.innerHTML = "Le code source de cette page est sous licence <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> et peut être trouvé <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">ici</a>."
     var cookiesmessage = "Ce site Web utilise des cookies pour améliorer votre expérience.";
     var cookiesdismiss = "D'accord";
     var cookieslink = "Apprendre encore plus <i class='fas fa-external-link-alt fa-xs'></i>";
@@ -156,7 +156,7 @@ function switchLanguage(cookies) {
     text3.placeholder = "Escreva algo...";
     text4.placeholder = "Tradução";
     translate.innerHTML = "Traduzir";
-    footer.innerHTML = "O código-fonte desta página está licenciado sob a <a href=\"LICENSE\">GPL 3.0</a> e pode ser encontrado <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">aqui</a>."
+    footer.innerHTML = "O código-fonte desta página está licenciado sob a <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> e pode ser encontrado <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">aqui</a>."
     var cookiesmessage = "Este site usa cookies para melhorar sua experiência.";
     var cookiesdismiss = "De acordo";
     var cookieslink = "Aprender mais <i class='fas fa-external-link-alt fa-xs'></i>";
