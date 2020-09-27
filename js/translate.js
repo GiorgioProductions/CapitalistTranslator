@@ -32,7 +32,7 @@ switchLanguage();
 
 
 
-//Dropdown
+//Open and close the dropdown language menu
 document.querySelectorAll('.dropdown').forEach(el => el.addEventListener('click', function(event) {
   event.stopPropagation();
   el.classList.toggle('is-active');
