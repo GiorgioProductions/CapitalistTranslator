@@ -1,6 +1,5 @@
-//Set defaults
+//Set English as default language
 lang = "English";
-var translate = document.getElementById("translate");
 
 //Browser language
 var language = document.getElementById("language-selected");
@@ -44,6 +43,7 @@ document.querySelectorAll('.dropdown-item').forEach(el => el.addEventListener('c
 }));
 
 //Translation
+var translate = document.getElementById("translate");
 translate.addEventListener('click', function(event) {
   var translation = "";
   var input = document.getElementById("input").value;
