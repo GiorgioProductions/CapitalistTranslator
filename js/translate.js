@@ -1,5 +1,7 @@
-//Set English as default language
+//Set defaults
 lang = "English";
+cookies = true;
+var translate = document.getElementById("translate");
 
 //Browser language
 var language = document.getElementById("language-selected");
@@ -21,10 +23,12 @@ switch (browserLang.substring(0,2)) {
   //Add your language code here
 
 }
+
+
 language.innerHTML=lang;
 document.querySelectorAll('.dropdown-item').forEach(el => el.classList.remove('is-active'));
 document.getElementById(lang).classList.add("is-active");
-switchLanguage(true);
+switchLanguage();
 
 
 
@@ -39,11 +43,10 @@ document.querySelectorAll('.dropdown-item').forEach(el => el.addEventListener('c
   language.innerHTML=el.innerHTML;
   document.querySelectorAll('.dropdown-item').forEach(el => el.classList.remove('is-active'));
   el.classList.add("is-active");
-  switchLanguage(false);
+  switchLanguage();
 }));
 
 //Translation
-var translate = document.getElementById("translate");
 translate.addEventListener('click', function(event) {
   var translation = "";
   var input = document.getElementById("input").value;
@@ -56,7 +59,7 @@ translate.addEventListener('click', function(event) {
   }
   document.getElementById("translation-field").value = translation;
   if (words == 0) {
-    switchLanguage(false);
+    switchLanguage();
   }
 });
 
@@ -103,7 +106,7 @@ function countWords(str) {
 }
 
 //Switch Language
-function switchLanguage(cookies) {
+function switchLanguage() {
   var text1 = document.getElementById("text1");
   var text2 = document.getElementById("text2");
   var text3 = document.getElementById("input");
@@ -170,22 +173,24 @@ function switchLanguage(cookies) {
   //This will only be executed when you open the app
   if (cookies) {
     window.cookieconsent.initialise({
-    "palette": {
+      "palette": {
         "popup": {
-            "background": "#3298dc",
-            "text": "#fff"
+          "background": "#3298dc",
+          "text": "#fff"
         },
         "button": {
-            "background": "#fff",
-            "text": "#3298dc"
+          "background": "#fff",
+          "text": "#3298dc"
         }
-    },
-    "theme": "classic",
-    "content": {
+      },
+      "theme": "classic",
+      "content": {
         "message": cookiesmessage,
         "dismiss": cookiesdismiss,
         "link": cookieslink,
         "href": "https://www.cookiesandyou.com/"
-    }
-  });}
+          }
+    });
+    cookies = false;
+  }
 }
