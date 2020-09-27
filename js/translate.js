@@ -51,7 +51,7 @@ translate.addEventListener('click', function(event) {
   var translation = "";
   var input = document.getElementById("input").value;
   var words = countWords(input);
-  if (input == null || input == "") {
+  if (input == null || input == "" || !input.replace(/\s/g, '').length) {
     words = 0;
   }
   for (var i = 0; i < words; i++) {
