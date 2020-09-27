@@ -1,9 +1,9 @@
 //Set defaults
 lang = "English";
 cookies = true;
-var translate = document.getElementById("translate");
+translate = document.getElementById("translate");
 
-//Browser language
+//Detect browser language
 var language = document.getElementById("language-selected");
 var browserLang = navigator.language || navigator.userLanguage;
 switch (browserLang.substring(0,2)) {
@@ -24,7 +24,7 @@ switch (browserLang.substring(0,2)) {
 
 }
 
-
+//Apply browser language
 language.innerHTML=lang;
 document.querySelectorAll('.dropdown-item').forEach(el => el.classList.remove('is-active'));
 document.getElementById(lang).classList.add("is-active");
@@ -55,7 +55,7 @@ translate.addEventListener('click', function(event) {
     words = 0;
   }
   for (var i = 0; i < words; i++) {
-    var translation = translation + "oink ";
+    translation += "oink ";
   }
   document.getElementById("translation-field").value = translation;
   if (words == 0) {
@@ -155,7 +155,7 @@ function switchLanguage() {
     case "Português":
     document.title="Tradutor Capitalista"
     text1.innerHTML = document.title;
-    text2.innerHTML = "Traduza do seu idioma para o inglês <strong>Capitalista</strong>";
+    text2.innerHTML = "Traduza do seu idioma para o <strong>Capitalista</strong>";
     text3.placeholder = "Escreva algo...";
     text4.placeholder = "Tradução";
     translate.innerHTML = "Traduzir";
