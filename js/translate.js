@@ -19,6 +19,9 @@ switch (browserLang.substring(0,2)) {
   case "pt":
   var lang = "Português";
   break;
+  case "cs":
+  var lang = "Čeština";
+  break;
 
   //Add your language code here
 
@@ -90,6 +93,10 @@ function listen2() {
 
     case "Português":
     var msglang = "pt-BR"
+    break;
+	
+	case "Čeština":
+    var msglang = "cs-CZ"
     break;
 
     //Add your language code here
@@ -163,6 +170,19 @@ function switchLanguage() {
     var cookiesmessage = "Este site usa cookies para melhorar sua experiência.";
     var cookiesdismiss = "De acordo";
     var cookieslink = "Aprender mais <i class='fas fa-external-link-alt fa-xs'></i>";
+    break;
+	
+	case "Čeština":
+    document.title="Kapitalistický překladač"
+    text1.innerHTML = document.title;
+    text2.innerHTML = "Přelož něco z tvého jazyka do jazyka <strong>kapitalistů</strong>";
+    text3.placeholder = "Napiš něco...";
+    text4.placeholder = "Překlad";
+    translate.innerHTML = "Přeložit";
+    footer.innerHTML = "Zdrojový kód této webové aplikace spadá pod licenci <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> a lze jej nalézt <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">zde</a>."
+    var cookiesmessage = "Tato stránka využívá pro zlepšení tvého zážitku cookies.";
+    var cookiesdismiss = "OK";
+    var cookieslink = "Zjistit více <i class='fas fa-external-link-alt fa-xs'></i>";
     break;
 
     //Add your language strings here
