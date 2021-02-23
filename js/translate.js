@@ -79,6 +79,7 @@ function listen2() {
   var input = document.getElementById("input").value;
   var msg = new SpeechSynthesisUtterance(input);
   switch (language.innerHTML) {
+    
     case "English":
     var msglang = "en-US"
     break;
@@ -94,8 +95,8 @@ function listen2() {
     case "Português":
     var msglang = "pt-BR"
     break;
-	
-	case "Čeština":
+
+	  case "Čeština":
     var msglang = "cs-CZ"
     break;
 
@@ -171,7 +172,7 @@ function switchLanguage() {
     var cookiesdismiss = "De acordo";
     var cookieslink = "Aprender mais <i class='fas fa-external-link-alt fa-xs'></i>";
     break;
-	
+
 	case "Čeština":
     document.title="Kapitalistický překladač"
     text1.innerHTML = document.title;
