@@ -1,3 +1,5 @@
+![](https://giorgioproductions.es/CapitalistTranslator/img/logo.png)
+
 # CapitalistTranslator
 Translate from your language to Capitalist
 
