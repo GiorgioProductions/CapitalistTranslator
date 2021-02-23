@@ -1,4 +1,4 @@
-![](https://giorgioproductions.es/CapitalistTranslator/img/logo.png)
+<img src="https://giorgioproductions.es/CapitalistTranslator/img/logo.png" height="100px">
 
 # CapitalistTranslator
 Translate from your language to Capitalist
