@@ -54,21 +54,25 @@
           </div>
         </div>
       </div>
+      <button class="button">
+        <span onclick="listen2()" class="icon is-left" style="cursor: pointer;pointer-events: initial !important;">
+            <i class="fas fa-volume-up"></i>
+        </span>
+      </button>
         <br><br>
         <div class="control has-icons-left">
-          <input id="input" class="input" type="text" placeholder="Type something...">
-          <span onclick="listen2()" class="icon is-left" style="cursor: pointer;pointer-events: initial !important;">
-              <i class="fas fa-volume-up"></i>
-          </span>
+          <textarea rows="5" id="input" class="textarea" type="text" placeholder="Type something..."></textarea>
         </div>
         <br>
         <button id="translate" class="button is-info">Translate</button>
-        <br><br>
-        <div class="control has-icons-left">
-          <input id="translation-field" class="input" type="text" value="" readonly>
+        <button class="button">
           <span onclick="listen()" class="icon is-left" style="cursor: pointer;pointer-events: initial !important;">
               <i class="fas fa-volume-up"></i>
           </span>
+        </button>
+        <br><br>
+        <div class="control has-icons-left">
+          <textarea rows="5" id="translation-field" class="textarea" type="text" value="" readonly></textarea>
         </div>
     </div>
   </section>
