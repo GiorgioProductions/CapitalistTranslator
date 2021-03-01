@@ -27,13 +27,14 @@
   </head>
   <body>
   <section class="section">
-    <div class="container">
       <h1 id="text1" class="title">
         Capitalist Translator
       </h1>
       <p id="text2" class="subtitle">
         Translate from your language to <strong>Capitalist</strong>
       </p>
+      <div class="columns">
+        <div class="column">
       <div class="dropdown">
         <div class="dropdown-trigger">
           <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -59,11 +60,14 @@
             <i class="fas fa-volume-up"></i>
         </span>
       </button>
-        <br><br>
+        <br/><br/>
+
         <div class="control has-icons-left">
           <textarea rows="5" id="input" class="textarea" type="text" placeholder="Type something..."></textarea>
         </div>
         <br>
+        </div>
+        <div class="column">
         <button id="translate" class="button is-info">Translate</button>
         <button onclick="listen()" class="button">
           <span class="icon is-left" style="cursor: pointer;pointer-events: initial !important;">
@@ -73,6 +77,7 @@
         <br><br>
         <div class="control has-icons-left">
           <textarea rows="5" id="translation-field" class="textarea" type="text" value="" readonly></textarea>
+        </div>
         </div>
     </div>
   </section>
