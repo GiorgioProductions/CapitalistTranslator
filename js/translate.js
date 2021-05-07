@@ -1,8 +1,8 @@
-//Set defaults
+// Set defaults
 lang = "English";
 translate = document.getElementById("translate");
 
-//Detect browser language
+// Detect browser language
 var language = document.getElementById("language-selected");
 var browserLang = navigator.language || navigator.userLanguage;
 switch (browserLang.substring(0,2)) {
@@ -170,7 +170,7 @@ function switchLanguage() {
     footer.innerHTML = "Zdrojový kód této webové aplikace spadá pod licenci <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> a lze jej nalézt <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">zde</a>."
     break;
 
-    //Add your language strings here
+    // Add your language strings here
 
   }
 
