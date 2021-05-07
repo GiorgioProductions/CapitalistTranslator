@@ -69,11 +69,11 @@ translate.addEventListener('click', function(event) {
 function listen() {
   window.speechSynthesis.cancel();
   if (!(document.getElementById("translation-field").value == "") && !(document.getElementById("translation-field").value == "")) {
-    var audio = new Audio('tts/tts.wav');
+    var audio = new Audio('audio/listen.wav');
     audio.play();
   }
 }
-function listen2() {
+function tts() {
   window.speechSynthesis.cancel();
   var input = document.getElementById("input").value;
   var msg = new SpeechSynthesisUtterance(input);
@@ -114,58 +114,58 @@ function countWords(str) {
 
 //Switch Language
 function switchLanguage() {
-  var text1 = document.getElementById("text1");
-  var text2 = document.getElementById("text2");
-  var text3 = document.getElementById("input");
-  var text4 = document.getElementById("translation-field");
+  var title = document.getElementById("title");
+  var subtitle = document.getElementById("subtitle");
+  var input = document.getElementById("input");
+  var translation = document.getElementById("translation-field");
   var footer = document.getElementById("footer");
   switch (language.innerHTML.toString()) {
     case "English":
     document.title="Capitalist Translator"
-    text1.innerHTML = document.title;
-    text2.innerHTML = "Translate from your language to <strong>Capitalist</strong>";
-    text3.placeholder = "Type something...";
-    text4.placeholder = "Translation";
+    title.innerHTML = document.title;
+    subtitle.innerHTML = "Translate from your language to <strong>Capitalist</strong>";
+    input.placeholder = "Type something...";
+    translation.placeholder = "Translation";
     translate.innerHTML = "Translate";
     footer.innerHTML = "The source code of this web app is licensed <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> and can be found <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">here</a>."
     break;
 
     case "Español":
     document.title="Traductor Capitalista"
-    text1.innerHTML = document.title;
-    text2.innerHTML = "Traduce de tu idioma al <strong>Capitalista</strong>";
-    text3.placeholder = "Escribe algo...";
-    text4.placeholder = "Traducción";
+    title.innerHTML = document.title;
+    subtitle.innerHTML = "Traduce de tu idioma al <strong>Capitalista</strong>";
+    input.placeholder = "Escribe algo...";
+    translation.placeholder = "Traducción";
     translate.innerHTML = "Traducir";
     footer.innerHTML = "El código fuente de esta página tiene licencia <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> y puede ser encontrado <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">aquí</a>."
     break;
 
     case "Français":
     document.title="Traducteur Capitaliste"
-    text1.innerHTML = document.title;
-    text2.innerHTML = "Traduire de votre langue au <strong>Capitaliste</strong>";
-    text3.placeholder = "Écris quelque chose...";
-    text4.placeholder = "Traduction";
+    title.innerHTML = document.title;
+    subtitle.innerHTML = "Traduire de votre langue au <strong>Capitaliste</strong>";
+    input.placeholder = "Écris quelque chose...";
+    translation.placeholder = "Traduction";
     translate.innerHTML = "Traduire";
     footer.innerHTML = "Le code source de cette page est sous licence <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> et peut être trouvé <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">ici</a>."
     break;
 
     case "Português":
     document.title="Tradutor Capitalista"
-    text1.innerHTML = document.title;
-    text2.innerHTML = "Traduza do seu idioma para o <strong>Capitalista</strong>";
-    text3.placeholder = "Escreva algo...";
-    text4.placeholder = "Tradução";
+    title.innerHTML = document.title;
+    subtitle.innerHTML = "Traduza do seu idioma para o <strong>Capitalista</strong>";
+    input.placeholder = "Escreva algo...";
+    translation.placeholder = "Tradução";
     translate.innerHTML = "Traduzir";
     footer.innerHTML = "O código-fonte desta página está licenciado sob a <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> e pode ser encontrado <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">aqui</a>."
     break;
 
 	case "Čeština":
     document.title="Kapitalistický překladač"
-    text1.innerHTML = document.title;
-    text2.innerHTML = "Přelož něco z tvého jazyka do jazyka <strong>kapitalistů</strong>";
-    text3.placeholder = "Napiš něco...";
-    text4.placeholder = "Překlad";
+    title.innerHTML = document.title;
+    subtitle.innerHTML = "Přelož něco z tvého jazyka do jazyka <strong>kapitalistů</strong>";
+    input.placeholder = "Napiš něco...";
+    translation.placeholder = "Překlad";
     translate.innerHTML = "Přeložit";
     footer.innerHTML = "Zdrojový kód této webové aplikace spadá pod licenci <a target=\"_blank\" href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL 3.0</a> a lze jej nalézt <a target=\"_blank\" href=\"https://github.com/GiorgioProductions/CapitalistTranslator\">zde</a>."
     break;
